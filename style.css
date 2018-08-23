@@ -1,0 +1,215 @@
+:root {
+  --primary-color: #d37a46;
+  --secondary-color: #192d67;
+  --link-color: #5166b6;
+  --alt-color: #2ab797;
+}
+
+@font-face {
+  font-family: Blur;
+  src: url(./assets/blur-medium.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: Blur, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site {
+  position: relative;
+}
+
+.site__bg {
+  background: linear-gradient(150deg,#934125 15%,#c66336 70%,#d3886b 94%);
+  bottom: 0;
+  height: 120%;
+  overflow: hidden;
+  position: absolute;
+  transform-origin: 0;
+  transform: skewY(-8deg);
+  width: 100%;
+  z-index: -1;
+}
+
+.site__title {
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.banner {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 50px;
+  margin: 0;
+  padding: 1rem;
+  position: relative;
+  text-align: center;
+  z-index: 0;
+}
+
+.banner:before {
+  border: 2px solid currentColor;
+  bottom: 2px;
+  content: " ";
+  left: 2px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: -1;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 1rem 0;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+.menu__item {
+  margin-right: 1.5rem;
+}
+
+.menu__item--active {
+  color: white;
+  text-decoration: underline;
+}
+
+.menu__link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu__link.menu__link--button {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #2ab797;
+  transition: 300ms all;
+}
+
+.menu__link.menu__link--button:hover {
+  background-color: var(--secondary-color);
+}
+
+.hero {
+  min-height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 3rem;
+  max-width: 1000px;
+}
+
+.hero__image {
+  max-width: 400px;
+  transform: rotate(-8deg);
+  border: 5px solid black;
+  height: auto;
+}
+
+.hero__title {
+  color: white;
+  font-size: 2rem;
+}
+
+.hero__description {
+  color: white;
+  margin-bottom: 2rem;
+
+}
+
+.hero__button {
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: var(--alt-color);
+  transition: 300ms all;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+
+.hero__button:hover {
+  background-color: #1f9274;
+}
+
+.about {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 800px;
+}
+
+.about__image {
+  float: right;
+  margin-bottom: 6rem;
+  shape-outside: circle(50%);
+}
+
+.video {
+  position: relative;
+}
+
+.video__wrapper {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.video__bg {
+  background-color: black;
+  background-image: url('./assets/connectwork.png');
+  background-repeat: repeat;
+  height: 80%;
+  overflow: hidden;
+  position: absolute;
+  transform-origin: 0;
+  transform: skewY(-5deg);
+  width: 100%;
+  top: 50px;
+  z-index: -1;
+}
+
+.video__title {
+  color: white;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.participants {
+  max-width: 1000px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.participants__title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.participants__list {
+  list-style-type: none;
+  font-family: 'Nothing You Could Do', cursive;
+  padding: 0;
+  margin: 0;
+  column-count: 5;
+  column-gap: 2rem;
+}
