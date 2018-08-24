@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #777777;
+}
+
 body {
   margin: 0;
   font-family: 'Helvetica', Arial, sans-serif;
@@ -139,6 +143,7 @@ img {
 .hero__button {
   color: white;
   padding: 0.75rem 1.5rem;
+  border: none;
   margin-right: 1rem;
   font-size: 1.5rem;
   text-decoration: none;
@@ -212,4 +217,73 @@ img {
   margin: 0;
   column-count: 5;
   column-gap: 2rem;
+}
+
+.participants__highlight {
+  background-color: #faed9e;
+  background-image: linear-gradient(to right, #ffe046 0%, #f9edad 100%);
+}
+
+.sign {
+  padding: 2rem;
+}
+
+.sign__wrapper {
+  text-align: center;
+  max-width: 1000px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.sign__text {
+  margin-bottom: 1rem;
+}
+
+.sign__field {
+  border: none;
+  font-family: 'Nothing You Could Do', cursive;
+  border-bottom: 2px dotted black;
+  margin: 0 2rem 1rem 0;
+  font-size: 3rem;
+  width: 400px;
+}
+
+.sign__x {
+  font-size: 3rem;
+}
+
+.sign__button {
+  background-color: var(--alt-color);
+  padding: 0.3rem 1.5rem;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.sign__error {
+  background-color: rgba(255, 0, 0, 0.2);
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+  color: red;
+}
+
+.sign__success {
+  color: green;
+  background-color: rgba(0, 255, 0, 0.2);
+  max-width: 400px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: #333333;
+}
+
+.footer__wrapper {
+  max-width: 1000px;
+  color: white;
+  margin: 0 auto;
 }

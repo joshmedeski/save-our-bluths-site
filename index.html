@@ -19,7 +19,7 @@
         <div>
           <h2 class="hero__title">The Bluths are in trouble</h2>
           <p class="hero__description">Yup, they screwed up... again. They need your money<br>because they spent all of theirs already.</p>
-          <a href="./sign.html" class="hero__button">Sign the Petition</a>
+          <button onclick="scrollToPetition()" class="hero__button">Sign the Petition</button>
         </div>
         <img src="./assets/man-reading-magazine.png" alt="Man reading magazine" class="hero__image">
       </section>
@@ -32,13 +32,7 @@
     <p>After its debut in 2003, the series received widespread critical acclaim, six Primetime Emmy Awards, and one Golden Globe Award, and has attracted a cult following, including several fan-based websites. In 2007, Time listed the show among its "All-TIME 100 TV Shows"; in 2008, it was ranked 16th on Entertainment Weekly's "New TV Classics" list. In 2011, IGN named Arrested Development the "funniest show of all time". Its humor has been cited as a key influence on later single-camera comedy series such as 30 Rock and Community.</p>
     <p>Despite critical acclaim, Arrested Development received low ratings and viewership on Fox, which canceled the series in 2006. Rumors of an additional season and a feature film persisted until 2011, when Netflix agreed to license new episodes and distribute them exclusively on its video streaming service. These episodes were later released on May 26, 2013. Netflix also commissioned a fifth season of Arrested Development, the first half of which premiered on May 29, 2018.  (<a href="https://en.wikipedia.org/wiki/Arrested_Development_(TV_series)">source</a>)</p>
     <h3>TL;DR</h3>
-    <p>It's a show about a formerly wealthy and habitually dysfunctional family.</p>
-  </section>
-
-  <section class="gallery">
-    <ul class="gallery__list">
-      <li><img src="./assets/gallery/.jpg" alt=""/></li>
-    </ul>
+    <p>It's a well written television comedy about a dysfunctional family.</p>
   </section>
 
   <div class="video">
@@ -49,81 +43,111 @@
     </div>
   </div>
 
+  <!-- <section class="gallery">
+    <ul class="gallery__list">
+      <li><img src="./assets/gallery/.jpg" alt=""/></li>
+    </ul>
+  </section> -->
+
   <section class="participants">
-    <h2 class="participants__title">Join the Petition</h2>
-    <ul class="participants__list">
-      <li>George Oscar Bluth</li>
-      <li>Michael Bluth</li>
-      <li>George Michael Bluth</li>
-      <li>Tobias Fünke</li>
-      <li>Lindsay Bluth Fünke</li>
-      <li>Buster Bluth</li>
-      <li>Maeby Fünke</li>
-      <li>George Bluth, Sr.</li>
-      <li>Oscar Bluth</li>
-      <li>Lucille Bluth</li>
-      <li>Narrator/Himself</li>
-      <li>Bob Loblaw</li>
-      <li>Maria Bamford</li>
-      <li>Debrie Bardeaux</li>
-      <li>John Beard</li>
-      <li>Ed Begley Jr.</li>
-      <li>Stan Sitwell</li>
-      <li>Judge Lionel Ping	</li>
-      <li>Starla</li>
-      <li>Herbert Love</li>
-      <li>Marky Bark</li>
-      <li>Larry Middleman</li>
-      <li>Rebel Alley</li>
-      <li>Mort Meyers</li>
-      <li>Dave</li>
-      <li>Lupe</li>
-      <li>Brian Grazer</li>
-      <li>Kitty Sanchez</li>
-      <li>Trisha Thoon</li>
-      <li>Ted</li>
-      <li>James Carr</li>
-      <li>Gary</li>
-      <li>Wayne Jarvis</li>
-      <li>Johnny Bark</li>
-      <li>Officer Taylor</li>
-      <li>Annyong Bluth</li>
-      <li>Stefan Gentles</li>
-      <li>Maggie Lizer</li>
-      <li>Cindi Lightballoon</li>
-      <li>Julia Adelaide</li>
-      <li>Lucille Austero</li>
-      <li>Country Club Waiter</li>
-      <li>David Carter</li>
-      <li>Joan Bark</li>
-      <li>Gene Parmesan</li>
-      <li>Paul "P-Hound" Huan	</li>
-      <li>James Alan Spangler	</li>
-      <li>Wife of G.O.B.	</li>
-      <li>Heartfire	</li>
-      <li>White Power Bill	</li>
-      <li>Doctor Fishman	</li>
-      <li>Jonah Feinberg	</li>
-      <li>J. Walter Weatherman</li>
-      <li>Doctor Norman	</li>
-      <li>Tony Wonder	</li>
-      <li>Sally Sitwell	</li>
-      <li>Rita Leeds	</li>
-      <li>Uncle Trevor	</li>
-      <li>Terry Veal	</li>
-      <li>Argyle Austero</li>
-      <li>Marta Estrella</li>
-      <li>Marta Estrella</li>
-      <li>Steve Holt</li>
-      <li>Herb Zuckerkorn	</li>
-      <li>Carl Weathers	</li>
+    <h2 class="participants__title">See who's already joined the cause</h2>
+    <ul class="participants__list" id="participants">
       <li>Ann Veal	</li>
+      <li>Annyong Bluth</li>
+      <li>Argyle Austero</li>
       <li>Barry Zuckerko</li>
-      <li>Ice	</li>
-      <li>Doug Fleer	</li>
+      <li>Bob Loblaw</li>
+      <li>Brian Grazer</li>
+      <li>Buster Bluth</li>
+      <li>Carl Weathers	</li>
+      <li>Cindi Lightballoon</li>
+      <li>Country Club Waiter</li>
+      <li>Dave</li>
+      <li>David Carter</li>
       <li>Dean Fleer	</li>
+      <li>Debrie Bardeaux</li>
+      <li>Doctor Fishman	</li>
+      <li>Doctor Norman	</li>
+      <li>Doug Fleer	</li>
+      <li>Ed Begley Jr.</li>
+      <li>Gary</li>
+      <li>Gene Parmesan</li>
+      <li>George Bluth, Sr.</li>
+      <li>George Michael Bluth</li>
+      <li>George Oscar Bluth</li>
+      <li>Heartfire	</li>
+      <li>Herb Zuckerkorn	</li>
+      <li>Herbert Love</li>
+      <li>Ice	</li>
+      <li>J. Walter Weatherman</li>
+      <li>James Alan Spangler	</li>
+      <li>James Carr</li>
+      <li>Joan Bark</li>
+      <li>John Beard</li>
+      <li>Johnny Bark</li>
+      <li>Jonah Feinberg	</li>
+      <li>Judge Lionel Ping	</li>
+      <li>Julia Adelaide</li>
+      <li>Kitty Sanchez</li>
+      <li>Larry Middleman</li>
+      <li>Lindsay Bluth Fünke</li>
+      <li>Lucille Austero</li>
+      <li>Lucille Bluth</li>
+      <li>Lupe</li>
+      <li>Maeby Fünke</li>
+      <li>Maggie Lizer</li>
+      <li>Maria Bamford</li>
+      <li>Marky Bark</li>
+      <li>Marta Estrella</li>
+      <li>Michael Bluth</li>
+      <li>Mort Meyers</li>
+      <li>Narrator/Himself</li>
+      <li>Officer Taylor</li>
+      <li>Oscar Bluth</li>
+      <li>Paul "P-Hound" Huan	</li>
+      <li>Rebel Alley</li>
+      <li>Rita Leeds	</li>
+      <li>Sally Sitwell	</li>
+      <li>Stan Sitwell</li>
+      <li>Starla</li>
+      <li>Stefan Gentles</li>
+      <li>Steve Holt</li>
+      <li>Ted</li>
+      <li>Terry Veal</li>
+      <li>Tobias Fünke</li>
+      <li>Tony Wonder	</li>
+      <li>Trisha Thoon</li>
+      <li>Uncle Trevor</li>
+      <li>Wayne Jarvis</li>
+      <li>White Power Bill</li>
+      <li>Wife of G.O.B.</li>
     </ul>
   </section>
+
+  <section class="sign" id="signForm">
+    <div class="sign__wrapper">
+      <h3 class="sign__text">Sign the petition to show support for the greatest show in television.</h3>
+      <form onsubmit="submitPetitionSigning(event)">
+        <span class="sign__x">x</span>
+        <input type="text" id="signField" class="sign__field"/>
+        <input type="submit" class="sign__button" value="Submit"/>
+      </form>
+      <div class="sign__error" id="signError" style="display: none">
+        <h3>Oops, you didn't sign your name!</h3>
+        <img src="./assets/huge-mistake.gif" alt="I've Made a Huge Mistake">
+      </div>
+      <div class="sign__success" id="signSuccess" style="display: none">
+        <h3>You did it, thanks!</h3>
+        <img src="./assets/lucille-bluth-excited.gif" alt="I've Made a Huge Mistake">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      This is a fictitious (fake) site, just a fan of the show. No affiliation with Fox or Netflix.
+    </div>
+  </footer>
 
   <script src="./scripts.js"></script> 
 </body>
